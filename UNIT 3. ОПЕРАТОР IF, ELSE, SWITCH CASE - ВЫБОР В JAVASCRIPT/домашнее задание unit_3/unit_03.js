@@ -27,9 +27,9 @@ function f2(){
     let output2 = document.querySelector('.out-2');
 
     if(a21 > a22){
-        output2.innerHTML = `${a21} is bigger than ${a22}`;
-    }else{
-        output2.innerHTML = `${a22} is bigger than ${a21}`;
+        output2.innerHTML = a21;
+    }else if(a22 > a21){
+        output2.innerHTML = a22;
     }
 }
 
@@ -48,9 +48,9 @@ function f3(){
     let num2 = +input_field_i32.value;
 
     if(num1 > num2){
-        output3.innerHTML = `${num1} is bigger`;
-    }else{
-        output3.innerHTML = `${num2} is bigger`;
+        output3.innerHTML = num1;
+    }else if(num2 > num1){
+        output3.innerHTML = num2;
     }
 }
 

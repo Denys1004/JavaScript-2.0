@@ -278,9 +278,6 @@ function f20(e) {
     e.preventDefault(); // чтобы форма не перезагружала страницу!!!!
     let form = document.querySelector('.f-20');
     let output = document.querySelector('.out-20');
-    console.log(form.elements);
-    console.log(form.elements['username'].value); 
-    console.log(form.elements['password'].value); 
 
     let user_val = form.elements['username'].value;
     let pass_val = form.elements['password'].value;
