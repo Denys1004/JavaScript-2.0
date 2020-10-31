@@ -3,7 +3,7 @@
 
 let a1 = 8;
 function t1() {
-
+    document.querySelector('.out-1').innerHTML = a1;
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -15,8 +15,7 @@ document.querySelector('.b-1').onclick = t1;
 
 let a2 = 8;
 function t2() {
-
-    //return
+    return a2;
 }
 
 document.querySelector('.b-2').onclick = function () {
