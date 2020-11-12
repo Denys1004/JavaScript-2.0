@@ -235,13 +235,25 @@ document.querySelector('.b-12').onclick = f12;
 let a13 = [];
 
 function f13() {
-    // НЕ ЗНАЮ КАК РЕШИТЬ  К СОЖАЛЕНИЮ
     let arr = [];
     for(let i=0; i<8; i++){
-        a13[i]= a13.push(0);
+        arr = [];
         for(let k=0; k<8; k++){
-            a13[i][k] = 1;
+            if(i%2 == 0){
+                if(k%2 == 0){
+                    arr.push(0)
+                }else{
+                    arr.push(1)
+                }
+            }else{
+                if(k%2 == 0){
+                    arr.push(1)
+                }else{
+                    arr.push(0)
+                }
+            }
         }
+        a13.push(arr);
     }
     console.log(a13);
 }
