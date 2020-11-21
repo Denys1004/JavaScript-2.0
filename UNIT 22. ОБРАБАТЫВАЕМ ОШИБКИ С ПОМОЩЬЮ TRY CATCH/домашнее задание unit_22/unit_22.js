@@ -3,11 +3,14 @@
 
 
 function t1() {
-    // тут добавляете try
     let a = 22;
-    let c = a + d;
-    // тут catch
-    // .. и вывод
+    try{
+        let c = a + d;
+    }
+    catch{
+        document.querySelector('.out-1').textContent = 1;
+    }
+
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -18,8 +21,12 @@ document.querySelector('.b-1').onclick = t1;
 function t2() {
     let a = 4;
     let b = 5;
-    document.querySelector('.out-2222222').innerHTML = a*b;
-
+    try{
+        document.querySelector('.out-2222222').innerHTML = a*b;
+    }
+    catch{
+        document.querySelector('.out-2').textContent = a*b;
+    }
 }
 
 document.querySelector('.b-2').onclick = t2;
@@ -32,7 +39,16 @@ document.querySelector('.b-2').onclick = t2;
 function t3() {
     let a = 4;
     let b = 5;
-    document.querySelector('.out-3').innerHTML = a*b;
+    let newdiv;
+    try{
+        document.querySelector('.out-3').innerHTML = a*b;
+    }
+    catch{
+        newdiv = document.createElement('div');
+        document.getElementById('section3').append(newdiv);
+        newdiv.classList.add('out-3');
+        newdiv.textContent = a*b;
+    }
 }
 
 document.querySelector('.b-3').onclick = t3;
@@ -44,7 +60,17 @@ let a = [2,3,4];
 // a = 5;
 
 function t4() {
-    a.push(7);
+    let out = '';
+    try{
+        a.push(7);
+    }
+    catch{
+        document.querySelector('.out-4').textContent = 0;
+    }
+    for(item of a){
+        out += `${item} `
+    }
+    document.querySelector('.out-4').textContent = out;
 }
 
 document.querySelector('.b-4').onclick = t4;
@@ -55,7 +81,15 @@ document.querySelector('.b-4').onclick = t4;
 
 function t5() {
     let p = document.querySelectorAll('p');
-    p.push(3);
+    try{
+        p.push(3);
+    }
+    catch{
+        document.querySelector('.out-5').textContent = 0;
+    }
+    finally{
+        document.querySelector('.out-5-1').textContent = 'finally';
+    }
 }
 
 document.querySelector('.b-5').onclick = t5;
