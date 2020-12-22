@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(211, 211, 211);
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.zone-1{
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+.zone-1 > img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.zone-2{
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    background-color: #fff;
+}
+.zone-2 > img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 10px;
+    background-color: aqua;
+}
