@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h3>File uploads</h3>
+        <div class="form_container">
+            <form action="uploadImages.php" method="post" enctype="multipart/form-data" id="uploadImages">
+                <input type="file" id="addImages" multiple="">
+                <input type="hidden" name="azaza" value="zazaza">
+                <ul id="uploadImagesList">
+                    <li class="item template">
+                        <span class="img-wrap"><img src="image.jpg" alt=""></span>
+                        <span class="delete-link" title="Remove">Remove</span>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <div>
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+            <!-- Progress bar-->
+            <div id="progress-bar">
+                <div class="progress-bg"></div>
+                <div class="progress-val">0%</div>
+            </div>
+        </div>
+
+
+
+    </div>	
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
