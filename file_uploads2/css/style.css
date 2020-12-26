@@ -1,0 +1,49 @@
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    /* background-color: pink; */
+}
+
+
+#uploadImagesList {
+    list-style: none;
+    padding: 0;
+}
+#addImages{
+    display: none;
+}
+#uploadImagesList .item {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#uploadImagesList .item .img-wrap {
+    width: inherit;
+    display: block;
+    height: 100px;
+    position: relative;
+}
+#uploadImagesList .item .img-wrap img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+#uploadImagesList .item .delete-link {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right:5px;
+}
+#icon_delete{
+    color: rgb(255, 255, 255);
+}
+#icon_attach{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.clear {
+    clear: both;
+}
