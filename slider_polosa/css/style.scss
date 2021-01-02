@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+
+#slider_polosa{
+    width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+#polosa{
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.polosa_img{
+    float: left;
+    height: 300px;
+    width: 600px;
+    object-fit: cover;
+}
+
+#polosa::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#slider_polosa_left{
+    margin-left: 200px;
+    padding: 10px 20px;
+}
