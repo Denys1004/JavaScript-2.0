@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.open_popout_btn {
+  cursor: pointer;
+}
+
+.modal {
+  z-index: 1000;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.93);
+}
+
+.modal #modal_form_container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.modal #modal_form_container .white_bg {
+  background-color: #fff;
+  position: absolute;
+  width: 90%;
+  padding: 20px 20px 40px;
+  min-width: 340px;
+  max-width: 680px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal #modal_form_container .white_bg #modal_form {
+  color: #372c23;
+  text-align: center;
+}
+
+.modal #modal_form_container .white_bg #modal_form h3 {
+  text-align: center;
+}
+
+.modal #modal_form_container .white_bg #modal_form input, .modal #modal_form_container .white_bg #modal_form textarea {
+  width: 100%;
+  max-width: 600px;
+  min-width: 340px;
+  margin: 0 auto;
+  background-color: rgba(55, 44, 35, 0.194);
+  border: 1px solid rgba(55, 44, 35, 0.577);
+  padding: 8px 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #372c23;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.modal #modal_form_container .white_bg #modal_form input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari/Edge */
+  color: #372c23;
+}
+
+.modal #modal_form_container .white_bg #modal_form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #372c23;
+}
+
+.modal #modal_form_container .white_bg #modal_form input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #372c23;
+}
+
+.modal #modal_form_container .white_bg #modal_form button {
+  width: 100%;
+  max-width: 600px;
+  min-width: 340px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #bdaa1c;
+  margin-top: 10px;
+  color: white;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.modal #modal_form_container .white_bg #modal_form button:hover {
+  background-color: #372c23;
+}
+
+.is_blurred {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.close_popout {
+  color: #372c23;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.close_popout span {
+  font-size: 30px;
+}
+
+.show_popout {
+  display: block;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */

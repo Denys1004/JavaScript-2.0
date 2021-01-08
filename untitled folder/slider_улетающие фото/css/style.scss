@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: pink;
+}
+.container{
+    width: 100%;
+}
+
+
+
+// УЛЕТАЮЩИЕ ФОТО
+#flowing_photos_container{
+    max-width: 513px;
+    margin: 50px auto;
+}
+.flowing_photos{
+    max-width: 493px;
+    min-height: 750px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card{
+    width: 80%;
+    height: 80%;
+    box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.384);
+    position: absolute; // чтобы сложить картинки стопочкой
+    transition: all ease 2s;
+    left: 10%;
+    top: 15%;
+}
+
+.fly_away{
+    left: -9999px;
+    top: -9999px
+}
